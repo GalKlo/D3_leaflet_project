@@ -8,3 +8,17 @@ body,
 html {
   height: 100%;
 }
+
+.legend {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Define box information to hold the colors in the legend */
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 10px;
+}
