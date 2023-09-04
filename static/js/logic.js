@@ -60,7 +60,7 @@ d3.json(url).then(function (data) {
         div.innerHTML = "<h3>Depth scale</h3>";
         for (let i=0; i < depthList.length; i++) {
             let color = chooseColor(depthList[i]);
-            const label = depthList[i] + (depthList[i + 1] ? '&ndash;' + (depthList[i + 1]) : '+');
+            let label = depthList[i] + (depthList[i + 1] ? '&ndash;' + (depthList[i + 1]) : '+');
             div.innerHTML += "<i style=\"background-color: " + color + "\"></i>" + label + '<br>';
         }
         return div;
